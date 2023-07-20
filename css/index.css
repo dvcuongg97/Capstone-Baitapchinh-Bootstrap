@@ -1,22 +1,30 @@
 html, body {
     font-family: 'Nunito', sans-serif;
+    transition: 0.3s;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* transition: 0.5s; */
+}
+
+a {
+    text-decoration: none;
 }
 
 /* start header */
 header {
-    background-color: white;
+    position: fixed;
     width: 100%;
     height: 90px;
     top: 0;
     left: 0;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
     z-index: 1;
+    transition: 0.4s;
 }
 
 .dark header {
@@ -134,14 +142,25 @@ header .nav-link:hover::before {
     border-radius: 50%;
     border: 1px solid #B7B7B7;
     background-color: white;
+    transition: 0.3s;
 }
+
+.header__search i:hover {
+    color: black;
+}
+
 .dark .header__search i {
     background-color: #181b1b;
+}
+
+.dark .header__search i:hover {
+    color: whitesmoke;
 }
 
 .header__button button {
     width: 200px;
     height: 50px;
+    font-weight: 600;
     border: 1px solid #dc4f72;
     color: #dc4f72;
     background-color: white;
@@ -149,8 +168,11 @@ header .nav-link:hover::before {
     transition: 0.5s;
 }
 
+.header__button button:focus {
+    box-shadow: 0 0 0 .2rem rgba(245, 95, 140, 0.421)
+}
+
 .dark .header__button button {
-    font-weight: 800;
     background-color: black;
 }
 
@@ -159,48 +181,148 @@ header .nav-link:hover::before {
     background-color: #dc4f72;
 }
 
-/* .btn-lg:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(220,79,114, 0.5)
-} */
-
 .header__sunmoon {
     width: 40px;
+}
+
+.header__sunmoon button:focus {
+    box-shadow: none;
+    cursor: auto;
 }
 
 /* Light theme */
 #myBody {
     background-color: white;
-  }
-  #switchButton {
+}
+#switchButton {
     background-color: white;
-  }
-  #switchButton .gg-sun {
+}
+#switchButton .gg-sun {
     display: none;
-  }
-  #switchButton .gg-moon {
+}
+#switchButton .gg-moon {
     display: block;
-  }
+}
   
   /* Dark Theme*/
-  .dark#myBody {
+.dark#myBody {
     background-color: black;
-  }
+}
 
-  .dark #switchButton {
+.dark #switchButton {
     background-color: black;
-  }
+}
 
-  .dark #switchButton .gg-sun {
+.dark #switchButton .gg-sun {
     display: block;
     color: white;
-  }
+}
   
-  .dark #switchButton .gg-moon {
+.dark #switchButton .gg-moon {
     display: none;
-  }
+}
 
-  /* .header__sunmoon i:active {
-    box-shadow: none;
-  } */
+.header__input {
+    width: 100%;
+    height: 100%;
+    background-color: #5f5858;
+    position: absolute;
+    opacity: 99;
+}
+
+.header__inputcontainer {
+    width: 80%;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+}
+
+.header__inputcontainer i {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header__inputcontainer input {
+    width: 80%;
+}
+
+.pop-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    /* transition: opacity 0ms; */
+    /* visibility: hidden; */
+    opacity: 1;
+    z-index: 99;
+    background: #000000ba;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.popup {
+    position: relative;
+    margin: 0rem auto;
+    padding: 15px;
+    top: 50%;
+    max-width: 600px;
+}
+
+.popup form input {
+    font-size: 16px;
+    line-height: 25px;
+    color: #b7b7b7;
+    height: 55px;
+    padding: 15px 20px 12px;
+    background: white;
+    width: 100%;
+    border: 1px solid #333;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+    outline: none;
+}
+
+.dark .popup form input {
+    background: #131617;
+}
+
+.search-box .btn {
+    outline: none;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 500;
+    height: 55px;
+    background: #dc4f72;
+    padding: 0 25px;
+    border-radius: initial;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: 0.3s;
+}
+
+.search-box .btn:hover {
+    opacity: 0.8;
+}
+
+.popup .close {
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    transition: all 0.2s;
+    font-size: 30px;
+    color: #b5b3b3;
+    opacity: 0.7;
+}
+
+.popup .close:hover {
+    color: whitesmoke;
+}
+
+/* header khi scroll */
+header.sticky {
+    height: 65px;
+}
