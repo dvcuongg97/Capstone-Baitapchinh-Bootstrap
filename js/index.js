@@ -2,11 +2,13 @@ function turn_dark() {
     document.getElementById("myBody").classList.toggle("dark");
 }
 
-function disableTxt() {
+document.getElementById("header_search").hidden = true;
+
+function hide() {
   document.getElementById("header_search").hidden = true;
 }
 
-function undisableTxt() {
+function show() {
   document.getElementById("header_search").hidden = false;
 }
 

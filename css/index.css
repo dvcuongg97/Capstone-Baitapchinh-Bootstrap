@@ -14,6 +14,7 @@ a {
     text-decoration: none;
 }
 
+
 /* start header */
 header {
     position: fixed;
@@ -165,7 +166,7 @@ header .nav-link:hover::before {
     color: #dc4f72;
     background-color: white;
     outline: none;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .header__button button:focus {
@@ -190,7 +191,7 @@ header .nav-link:hover::before {
     cursor: auto;
 }
 
-/* Light theme */
+
 #myBody {
     background-color: white;
 }
@@ -204,7 +205,6 @@ header .nav-link:hover::before {
     display: block;
 }
   
-  /* Dark Theme*/
 .dark#myBody {
     background-color: black;
 }
@@ -325,4 +325,209 @@ header .nav-link:hover::before {
 /* header khi scroll */
 header.sticky {
     height: 65px;
+    opacity: 0.9;
+}
+
+/* started */
+.started {
+    padding-top: 90px;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.started::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        white 60%,
+        rgba(233, 233, 233, 0.9) 100%
+    );
+    opacity: 0.96;
+}
+.dark .started::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        black 0,
+        #4e5051 30%,
+        #9d9e9e 60%,
+        #eeeeee 100%
+    );
+    background-size: 200%;
+    opacity: 0.97;
+}
+
+.started__item {
+    position: relative;
+    margin-top: 40px;
+}
+
+.started__left {
+    margin-top: 50px;
+    transition: all 0.4s;
+}
+
+.started__left h1 {
+    color: black;
+    margin-top: 50px;
+    font-size: 50px;
+    line-height: 57.5px;
+    font-weight: 700;
+}
+
+.dark .started__left h1 {
+    color: whitesmoke
+}
+
+.started__left p {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+.dark .started__left p {
+    color: #b7b7b7;
+}
+
+.started__button button {
+    margin-bottom: 100px;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    border: 1px solid #dc4f72;
+    color: #dc4f72;
+    background-color: white;
+    outline: none;
+    transition: 0.5s;
+}
+
+.started__button button:focus {
+    box-shadow: 0 0 0 .2rem rgba(245, 95, 140, 0.421)
+}
+
+.dark .started__button button {
+    background-color: black;
+}
+
+.started__button button:hover {
+    color: white;
+    background-color: #dc4f72;
+}
+
+.started__right img {
+    position: relative;
+    bottom: 0;
+}
+
+/* tools */
+#tools {
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    min-height: 100vh;
+    transition: all 0.4s;
+}
+
+.tools__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools__container h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+
+.tools__container .tools__title {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    color: black;
+}
+
+.dark .tools__container .tools__title {
+    color: whitesmoke;
+}
+
+.tools__container .tools__decs {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.dark .tools__container .tools__decs {
+    color: #b7b7b7b7;
+}
+
+.tools__item {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #f7f9fc;
+    width: calc(100% / 3 - 15px);
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1.32px solid #f7f9fc;
+    transition: 0.5s;
+}
+
+.dark .tools__item {
+    background-color: #191c1d;
+    border: 1.32px solid #191c1d;
+}
+
+.tools__item h3 {
+    color: black;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.dark .tools__item h3 {
+    color: whitesmoke;
+}
+
+.tools__item p {
+    color: #5a5a5a;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24.5px;
+}
+
+.dark .tools__item p {
+    color: #b7b7b7b7;
+}
+
+.tools__item:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dark .tools__item:hover {
+    background-color: black;
 }
