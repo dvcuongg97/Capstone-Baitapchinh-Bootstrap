@@ -7,7 +7,6 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* transition: 0.5s; */
 }
 
 a {
@@ -15,7 +14,7 @@ a {
 }
 
 
-/* start header */
+/* Header */
 header {
     position: fixed;
     width: 100%;
@@ -23,13 +22,13 @@ header {
     top: 0;
     left: 0;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
     z-index: 1;
     transition: 0.4s;
 }
 
 .dark header {
-    background-color: black;
+    background-color: #131617;
 }
 
 .header__container {
@@ -44,7 +43,7 @@ header {
 }
 
 header .nav-link {
-    color: black;
+    color: #131617;
     position: relative;
 }
 
@@ -99,13 +98,13 @@ header .nav-link:hover::before {
 }
 
 .dropdown-menu a {
-    color: black;
+    color: #131617;
 }
 
 .dropdown-menu,
 .dropdown-menu a:hover {
     background-color: white;
-    color: black;
+    color: #131617;
 }
 
 .dark .dropdown-menu {
@@ -118,7 +117,7 @@ header .nav-link:hover::before {
 
 .dark .dropdown-menu,
 .dark .dropdown-menu a:hover {
-    background-color: black;
+    background-color: #131617;
     color: white;
 }
 
@@ -147,7 +146,7 @@ header .nav-link:hover::before {
 }
 
 .header__search i:hover {
-    color: black;
+    color: #131617;
 }
 
 .dark .header__search i {
@@ -174,7 +173,7 @@ header .nav-link:hover::before {
 }
 
 .dark .header__button button {
-    background-color: black;
+    background-color: #131617;
 }
 
 .header__button button:hover {
@@ -206,11 +205,11 @@ header .nav-link:hover::before {
 }
   
 .dark#myBody {
-    background-color: black;
+    background-color: #131617;
 }
 
 .dark #switchButton {
-    background-color: black;
+    background-color: #131617;
 }
 
 .dark #switchButton .gg-sun {
@@ -252,8 +251,6 @@ header .nav-link:hover::before {
     top: 0px;
     left: 0;
     right: 0;
-    /* transition: opacity 0ms; */
-    /* visibility: hidden; */
     opacity: 1;
     z-index: 99;
     background: #000000ba;
@@ -325,10 +322,10 @@ header .nav-link:hover::before {
 /* header khi scroll */
 header.sticky {
     height: 65px;
-    opacity: 0.9;
+    opacity: 1;
 }
 
-/* started */
+/* Started */
 .started {
     padding-top: 90px;
     background-image: url(../img/banner.jpg);
@@ -348,8 +345,8 @@ header.sticky {
     height: 100%;
     background-image: linear-gradient(
         to right,
-        white 60%,
-        rgba(233, 233, 233, 0.9) 100%
+        white 80%,
+        rgba(255, 255, 255, 0.95) 100%
     );
     opacity: 0.96;
 }
@@ -362,7 +359,7 @@ header.sticky {
     height: 100%;
     background-image: linear-gradient(
         to right,
-        black 0,
+        #131617 0,
         #4e5051 30%,
         #9d9e9e 60%,
         #eeeeee 100%
@@ -382,7 +379,7 @@ header.sticky {
 }
 
 .started__left h1 {
-    color: black;
+    color: #131617;
     margin-top: 50px;
     font-size: 50px;
     line-height: 57.5px;
@@ -422,7 +419,7 @@ header.sticky {
 }
 
 .dark .started__button button {
-    background-color: black;
+    background-color: #131617;
 }
 
 .started__button button:hover {
@@ -435,7 +432,7 @@ header.sticky {
     bottom: 0;
 }
 
-/* tools */
+/* Tools */
 #tools {
     color: white;
     text-align: center;
@@ -462,7 +459,7 @@ header.sticky {
     font-size: 46px;
     line-height: 1;
     font-weight: 700;
-    color: black;
+    color: #131617;
 }
 
 .dark .tools__container .tools__title {
@@ -499,7 +496,7 @@ header.sticky {
 }
 
 .tools__item h3 {
-    color: black;
+    color: #131617;
     font-size: 26px;
     line-height: 35px;
     font-weight: 700;
@@ -529,5 +526,110 @@ header.sticky {
 }
 
 .dark .tools__item:hover {
-    background-color: black;
+    background-color: #131617;
+}
+
+/* Company */
+.company {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f7f9fc;
+    transition: 0.4s;
+}
+
+.dark .company {
+    background-color: #191c1d;
+}
+
+.company__container h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+
+.company__container .company__title {
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 700;
+    color: #131617;
+}
+
+.dark .company__container .company__title {
+    color: whitesmoke;
+}
+
+.company__container .company__decs {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 24.4px;
+}
+
+.dark .company__container .company__decs {
+    color: #b7b7b7b7;
+}
+
+.company__item {
+    position: relative;
+    margin-top: 30px;
+}
+
+.company__left {
+    width: 50%;
+    transition: all 0.4s;
+}
+
+.company__left h1 {
+    color: #131617;
+    font-size: 50px;
+    line-height: 57.5px;
+    font-weight: 700;
+}
+
+.dark .company__left h1 {
+    color: whitesmoke
+}
+
+.company__left p {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+.dark .company__left p {
+    color: #b7b7b7;
+}
+
+.company__button button {
+    margin-bottom: 100px;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    border: 1px solid #dc4f72;
+    color: white;
+    background-color: #dc4f72;
+    outline: none;
+    transition: 0.5s;
+}
+
+.company__button button:focus {
+    background-color: #d62f58;
+    box-shadow: 0 0 0 .2rem rgba(245, 95, 140, 0.421)
+}
+
+.company__button button:hover {
+    color: white;
+    background-color: #d62f58;
+}
+
+.company__right {
+    width: 50%;
+}
+
+.company__right img {
+    width: 100%;
+    border-radius: 5px;
 }
