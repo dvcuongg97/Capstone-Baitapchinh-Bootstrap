@@ -214,6 +214,10 @@ p {
 }
 
 /* projects */
+.nav .col-md-4 {
+    padding: 0;
+}
+
 .nav {
     font-weight: 700;
     font-size: 22px;
@@ -230,9 +234,10 @@ p {
 .nav-pills .nav-link {
     color: #2c3038;
     display: block;
-    padding: 1.2rem 5rem;
+    text-align: center;
     border-radius: 0;
     border-bottom: 3px solid rgb(193, 193, 193);
+    padding: 15px 0;
 }
 
 .nav-pills .nav-link.active {
