@@ -240,6 +240,22 @@ p {
     padding: 15px 0;
 }
 
+.projects_card {
+    padding: 0 30px;
+}
+
+.masterWork__projects .nav-item {
+    position: relative;
+}
+
+.masterWork__projects .nav-item i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transform: rotate(180deg);
+    visibility: hidden;
+}
+
 .nav-pills .nav-link.active {
     border-bottom: none;
     margin-bottom: -1px !important;
@@ -462,10 +478,12 @@ img.img-curve:hover {
     border-radius: 6px;
 }
 
+.masterWork__contact {
+    background-color: #f7f9fc;
+}
+
 .contact__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 30px;
     border-top: 1px solid #eee;
 }
 
@@ -512,4 +530,44 @@ img.img-curve:hover {
 
 .back__to__top i:hover {
     opacity: 1;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .masterWork__projects .nav-link {
+        border: 1px solid rgb(193, 193, 193);
+        text-align: left;
+        padding: 10px 15px;
+    }
+
+    .masterWork__projects .nav-item i {
+        visibility: visible;
+    }
+
+    .masterWork__projects .nav-link:active i {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .masterWork__carousel .slider-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
