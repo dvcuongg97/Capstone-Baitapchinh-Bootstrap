@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- google font -->
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
 
-    <!-- font awesome -->
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -40,7 +40,7 @@
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
 
-    <!-- GG moon & soon -->
+    <!-- Google moon & soon -->
     <link
       href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
       rel="stylesheet"
@@ -155,8 +155,8 @@
     <!-- Started -->
     <section class="started">
       <div class="started__container container w3l-index1">
-        <div class="started__item d-sm-flex">
-          <div class="started__left">
+        <div class="started__item d-sm-flex row">
+          <div class="started__left col-sm-12 col-lg-6">
             <div class="mr-4">
               <h1>We Execute Our Ideas <br />From Start to Finish</h1>
               <p class="mt-4">
@@ -168,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="started__right">
+          <div class="started__right col-sm-12 col-lg-6">
             <div class="ml-5">
               <img src="./img/main.png" alt="" />
             </div>
@@ -189,8 +189,8 @@
           posuere cubilia Curae; Nulla mollis <br />dapibus nunc, ut rhoncus
           turpis sodales quis. Integer sit amet mattis quam.
         </p>
-        <div class="tools__list">
-          <div class="tools__item">
+        <div class="tools__list row">
+          <div class="tools__item col-lg-4 col-md-6 col-12 mt-4">
             <img src="./img/s1.png" alt="" />
             <h3>Interactive</h3>
             <p>
@@ -198,7 +198,7 @@
               Laudantium tempora rerum perspiciatis?
             </p>
           </div>
-          <div class="tools__item">
+          <div class="tools__item col-lg-4 col-md-6 col-12 mt-4">
             <img src="./img/s2.png" alt="" />
             <h3>Business</h3>
             <p>
@@ -206,7 +206,7 @@
               Laudantium tempora rerum perspiciatis?
             </p>
           </div>
-          <div class="tools__item">
+          <div class="tools__item col-lg-4 col-md-12 col-12 mt-4">
             <img src="./img/s3.png" alt="" />
             <h3>Inspiration</h3>
             <p>
@@ -249,6 +249,11 @@
       </div>
     </section>
 
+    <!-- Go To Top -->
+    <div class="go_to_top" id="go-to-top" onclick="go_to_top()">
+      <i class="las la-angle-up"></i>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -266,6 +271,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 
     <!-- My js -->
     <script src="./js/index.js"></script>
