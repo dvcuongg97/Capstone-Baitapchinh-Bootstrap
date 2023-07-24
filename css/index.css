@@ -536,6 +536,7 @@ img.img-curve:hover {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 100%;
+        padding: 0 30px;
     }
 
     .masterWork__projects .nav-link {
