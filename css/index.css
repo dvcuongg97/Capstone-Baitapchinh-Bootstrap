@@ -487,7 +487,7 @@ img.img-curve:hover {
     border-top: 1px solid #eee;
 }
 
-.contact__content a {
+.contact__icon a {
     color: #2c3038;
     width: 36px;
     height: 36px;
@@ -497,7 +497,7 @@ img.img-curve:hover {
     text-align: center;
 }
 
-.contact__content a:hover {
+.contact__icon a:hover {
     color: #dc4f72;
     transition: 0.3s ease;
 }
@@ -569,6 +569,15 @@ img.img-curve:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .masterWork__contact .contact__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .masterWork__contact .CopyRights {
         text-align: center;
     }
 }
