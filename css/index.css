@@ -51,7 +51,7 @@ p {
     font-weight: 700;
     font-size: 14px;
     margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 1.5rem;
     text-transform: uppercase;
 }
 
@@ -536,7 +536,7 @@ img.img-curve:hover {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 100%;
-        padding: 0 30px;
+        padding: 0 15px;
     }
 
     .masterWork__projects .nav-link {
