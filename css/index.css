@@ -206,6 +206,7 @@ p {
 
 .masterWork__FAQ #accordion .card-link i {
     position: absolute;
+
     right: 5px;
 }
 
@@ -524,7 +525,7 @@ img.img-curve:hover {
     border-radius: 3px;
     background-color: #dc4f72;
     color: #fff;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.3s ease;
 }
 
@@ -555,6 +556,11 @@ img.img-curve:hover {
 }
 
 @media screen and (max-width: 990px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
     .contact__content {
         display: flex;
         flex-direction: column;
