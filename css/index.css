@@ -558,7 +558,7 @@ img.img-curve:hover {
 @media screen and (max-width: 990px) {
     .container {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 30px;
     }
 
     .contact__content {
