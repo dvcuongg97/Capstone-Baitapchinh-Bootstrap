@@ -506,7 +506,7 @@ img.img-curve:hover {
 /* back to top */
 
 
-.back__to__top {
+/* .back__to__top {
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -527,7 +527,7 @@ img.img-curve:hover {
     color: #fff;
     opacity: 0.5;
     transition: 0.3s ease;
-}
+} */
 
 .back__to__top i:hover {
     opacity: 1;
