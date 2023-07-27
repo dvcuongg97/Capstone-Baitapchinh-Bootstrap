@@ -315,6 +315,8 @@ header .nav-link:hover::before {
     opacity: 0.7;
 }
 
+.navbar-toggler
+
 .popup .close:hover {
     color: whitesmoke;
 }
