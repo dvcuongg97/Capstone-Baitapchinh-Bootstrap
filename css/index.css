@@ -746,7 +746,7 @@ header .navbar-brand {
 }
 
 /* Company */
-.company {
+/* .company {
     padding-top: 30px;
     margin-bottom: 30px;
     background-color: #f7f9fc;
@@ -846,7 +846,7 @@ header .navbar-brand {
 
 .company__right img:hover {
     transform: translateY(-10px);
-}
+} */
 
 /* Go To Top */
 .go_to_top {
