@@ -56,66 +56,78 @@
   <body id="myBody">
     <!-- Header -->
     <header>
-      <div class="header__container">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">
-            <i class="fa fa-handshake-o"></i>
-            Masterwork
-          </a>
-
-          <div
-            class="collapse navbar-collapse navbar navbar-expand-md"
-            id="navbarNav"
-          >
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item ml-4 active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item ml-4">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item ml-4">
-                  <a class="nav-link" href="#">Service</a>
-                </li>
-                <li class="nav-item ml-4 dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <a class="nav-link dropdown-item" href="#">Blog Post</a>
-                    <a class="nav-link dropdown-item" href="#">Landing page</a>
-                    <a class="nav-link dropdown-item" href="#">404 page</a>
-                  </div>
-                </li>
-                <li class="nav-item ml-4">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="header__search ml-2" id="tim-kiem">
-              <a href="#" title="search">
-                <i class="fa fa-search" onclick="show()"></i>
-              </a>
-            </div>
-            <div class="header__button ml-3 mr-1">
-              <button type="button" class="btn btn-block">
-                SCHEDULE A DEMO
-              </button>
-            </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="right">
+            <h1>
+              <i class="logo_icon fa fa-handshake"></i
+              ><a class="navbar-brand" id="master" href="#">Masterwork</a>
+            </h1>
+            <button
+              id="header-button"
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="tang_height_header()"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <div class="header__sunmoon">
-            <div style="width: 18rem">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link nut" id="nut_Home" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nut" href="#">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nut" href="#">Services</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nut" href="#">Contact</a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a
+                  class="nav-link nut dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item active" href="#">Blog Posts</a>
+                  <a class="dropdown-item active" href="#">Landing Pages</a>
+                  <a class="dropdown-item active" href="#">404 page</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link header__search" id="tim-kiem">
+                  <a href="#" title="search">
+                    <i class="fa fa-search" onclick="show()"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a id="im" class="nav-link header__button" href="#">
+                  <button type="button" class="btn btn-block">
+                    SCHEDULE A DEMO
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header__sunmoon dark-mode">
+            <div>
               <button
                 class="btn"
                 id="switchButton"
@@ -142,17 +154,6 @@
           </form>
         </div>
       </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </header>
 
     <!-- Started -->

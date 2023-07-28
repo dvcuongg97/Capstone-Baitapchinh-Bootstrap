@@ -2,6 +2,10 @@ function turn_dark() {
     document.getElementById("myBody").classList.toggle("dark");
 }
 
+function tang_height_header() {
+    document.getElementById("myBody").classList.toggle("tang_height");
+}
+
 document.getElementById("header_search").hidden = true;
 
 function hide() {
