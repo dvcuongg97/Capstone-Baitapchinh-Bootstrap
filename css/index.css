@@ -110,6 +110,12 @@ header .navbar-brand {
     position: relative;
 }
 
+.active .nav-link:hover,
+.dropdown-menu .active:hover {
+    color: #dc4f72;
+    position: relative;
+}
+
 .active .nav-link::before {
     content: "";
     position: absolute;
@@ -138,6 +144,7 @@ header .navbar-brand {
 .dropdown-menu .active:hover::before {
     width: 20px;
 }
+/*  */
 
 .dropdown-menu {
     border-radius: 5px;
@@ -746,7 +753,7 @@ header .navbar-brand {
 }
 
 /* Company */
-/* .company {
+.company {
     padding-top: 30px;
     margin-bottom: 30px;
     background-color: #f7f9fc;
@@ -846,7 +853,7 @@ header .navbar-brand {
 
 .company__right img:hover {
     transform: translateY(-10px);
-} */
+}
 
 /* Go To Top */
 .go_to_top {
